@@ -4,18 +4,18 @@
 Define a name for the IoT hub and assign it to an environment variable named HUB_NAME. The name must be globally unique since it will be used as part of the public DNS name.
 bash
 
-```
+```shell
 export HUB_NAME={hub name}
 ```
 
 Execute the following command in the Cloud Shell to create an IoT Hub in the resource group:
 Azure CLI
 
-```
+```shell
 az group list
 ```
 
-```
+```shell
 az iot hub create 
     --name $HUB_NAME 
     --resource-group [sandbox resource group name] 
@@ -32,3 +32,10 @@ Devices that transmit events to an Azure IoT hub must be registered with that Io
 We'll create a Node.js app that registers an array of simulated cameras with the IoT hub you've created. The Azure Cloud Shell you're working in has Node.js installed.
 
 Create a directory in the Cloud Shell to serve as the project directory. Then cd to that directory in a Command Prompt or terminal window.
+
+```sql
+SELECT System.Timestamp as [Time Ending],
+    COUNT(*) AS [Times Triggered]
+FROM CameraInput TIMESTAMP BY timestamp
+GROUP BY TumblingWindow(n, 1)
+```
