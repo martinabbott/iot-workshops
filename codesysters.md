@@ -15,7 +15,8 @@ Azure CLI
 az group list
 ```
 
-```az iot hub create 
+```
+az iot hub create 
     --name $HUB_NAME 
     --resource-group [sandbox resource group name] 
     --location southcentralus 
