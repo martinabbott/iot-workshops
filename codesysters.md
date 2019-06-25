@@ -2,8 +2,6 @@
 
 [Raspberry Pi Simulator](https://azure-samples.github.io/raspberry-pi-web-simulator/)
 
-<a href="http://example.com/" target="_blank">example</a>
-
 ## Create an Azure IoT Hub
 Define a name for the IoT hub and assign it to an environment variable named HUB_NAME. The name must be globally unique since it will be used as part of the public DNS name.
 bash
