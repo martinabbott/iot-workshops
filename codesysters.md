@@ -1,5 +1,7 @@
 # Codesysters IoT 101 Workshop
 
+[Raspberry Pi Simulator](https://azure-samples.github.io/raspberry-pi-web-simulator/)
+
 ## Create an Azure IoT Hub
 Define a name for the IoT hub and assign it to an environment variable named HUB_NAME. The name must be globally unique since it will be used as part of the public DNS name.
 bash
