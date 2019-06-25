@@ -6,14 +6,14 @@
 Define a name for the IoT hub and assign it to an environment variable named HUB_NAME. The name must be globally unique since it will be used as part of the public DNS name.
 bash
 
-```shell
+```bash
 export HUB_NAME={hub name}
 ```
 
 Execute the following command in the Cloud Shell to create an IoT Hub in the resource group:
 Azure CLI
 
-```shell
+```azurecli
 az group list
 ```
 
